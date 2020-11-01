@@ -26,7 +26,7 @@ def follower_count(user):
   uf_split = [int(i) for i in str(user.followers_count)]# Used to seperate 
 
   emoji_followers = ''.join([emoji_numbers[j] for j in uf_split if j in emoji_numbers.keys()]) 
-  return emoji_followers
+  return emoji_followers 
 
 api = create_api()
 
