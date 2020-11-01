@@ -4,9 +4,7 @@ from datetime import date
 born=date(2000, 10, 11)
 def calculateAge(birthDate): 
     today = date.today() 
-    age = today.year - birthDate.year - 
-         ((today.month, today.day) < 
-         (birthDate.month, birthDate.day)) 
+    age = today.year - birthDate.year - ((today.month, today.day) < (birthDate.month, birthDate.day)) 
   
     return age
 old=calculateAge(born)
@@ -28,7 +26,7 @@ def create_api():
 # Complete code
 import time
 
-def ager_count():
+def age_count():
   emoji_numbers =  {0: "0️⃣", 1: "1️⃣", 2: "2️⃣", 3: "3️⃣",
                       4: "4️⃣", 5: "5️⃣", 6: "6️⃣", 7: "7️⃣", 8: "8️⃣", 9: "9️⃣"}
 
