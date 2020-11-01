@@ -28,7 +28,7 @@ def create_api():
 # Complete code
 import time
 
-def follower_count(user):
+def ager_count():
   emoji_numbers =  {0: "0️⃣", 1: "1️⃣", 2: "2️⃣", 3: "3️⃣",
                       4: "4️⃣", 5: "5️⃣", 6: "6️⃣", 7: "7️⃣", 8: "8️⃣", 9: "9️⃣"}
 
@@ -40,8 +40,7 @@ def follower_count(user):
 api = create_api() 
 
 while True:
-    user = api.get_user('_BaffledCoder')
-    api.update_profile(name=f'Shubham Sharma|{old}')
-    print(f'Updating Twitter Name : Shubham Sharma|{old}')
+    api.update_profile(name=f'Shubham Sharma|{age_count()}')
+    print(f'Updating Twitter Name : Shubham Sharma|{age_count()}')
     print('Waiting to refresh')
     time.sleep(60)
