@@ -1,6 +1,6 @@
 import tweepy
 import os # operating system library
- 
+
 def create_api():
   consumer_key = os.getenv('consumer_key')
   consumer_secret = os.getenv('consumer_secret')
@@ -31,8 +31,8 @@ def follower_count(user):
 api = create_api()
 
 while True:
-    user = api.get_user('_BaffledCoder') #Twitter username
-    api.update_profile(name=f'Shubham Sharma|{follower_count(user)} Followers')
-    print(f'Updating Twitter Name : Shubham Sharma|{follower_count(user)} Followers')
+    user = api.get_user('Ameen91741779')
+    api.update_profile(name=f'shubham|{follower_count(user)} Followers')
+    print(f'Updating Twitter Name : shubham|{follower_count(user)} Followers')
     print('Waiting to refresh')
     time.sleep(60)
